@@ -1,0 +1,15 @@
+{
+  "name": "midi-mapper",
+  "version": "1.0.0",
+  "dependencies": [
+    {
+      "name": "imgui",
+      "features": [
+        "win32-binding",
+        "dx11-binding"
+      ]
+    },
+    "nlohmann-json"
+  ],
+  "builtin-baseline": "d015e31e90838a4c9dfa3eed45979bc70d9357fc"
+}

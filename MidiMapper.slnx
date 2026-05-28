@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="MidiMapper/MidiMapper.vcxproj" Id="5dd340f6-b264-45a5-ac34-427d7aab3d4d" />
+</Solution>
