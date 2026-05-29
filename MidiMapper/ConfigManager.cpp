@@ -15,20 +15,17 @@ namespace ConfigManager {
     const std::string configName = "config.json";
 
     void Load() {
-        std::ifstream inFile(configName);
+        std::ifstream file(configName);
 
-        if (inFile.is_open()) {
+        if (file.is_open()) {
             try {
                 json j;
-                inFile >> j;
-
+                file >> j;
                 config = j.get<std::vector<std::pair<Shortcut, Shortcut>>>();
-                inFile.close();
+                file.close();
                 return;
             }
-            catch (const json::exception& e) {
-                std::cerr << "Blad parsowania pliku config: " << e.what() << " Generuje domyslny.\n";
-            }
+            catch (const json::exception& e) {}
         }
 
         config.clear();
@@ -38,15 +35,12 @@ namespace ConfigManager {
     }
 
     void Save() {
-        std::ofstream outFile(configName);
-        if (outFile.is_open()) {
-            json j = config;
+        std::ofstream file(configName);
 
-            outFile << j.dump(4);
-            outFile.close();
-        }
-        else {
-            std::cerr << "Nie udalo sie otworzyc pliku do zapisu konfiguracji!\n";
+        if (file.is_open()) {
+            json j = config;
+            file << j.dump(4);
+            file.close();
         }
     }
 }
