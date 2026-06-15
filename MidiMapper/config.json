@@ -272,18 +272,18 @@
     [
         {
             "alt": false,
-            "ctrl": false,
-            "imKey": -1,
+            "ctrl": true,
+            "imKey": 598,
             "shift": false,
-            "vKey": 1,
+            "vKey": 189,
             "win": false
         },
         {
             "alt": false,
-            "ctrl": false,
-            "imKey": -1,
+            "ctrl": true,
+            "imKey": 602,
             "shift": false,
-            "vKey": 1,
+            "vKey": 187,
             "win": false
         }
     ],
@@ -345,9 +345,9 @@
         {
             "alt": false,
             "ctrl": false,
-            "imKey": 538,
-            "shift": true,
-            "vKey": 50,
+            "imKey": 524,
+            "shift": false,
+            "vKey": 32,
             "win": false
         },
         {

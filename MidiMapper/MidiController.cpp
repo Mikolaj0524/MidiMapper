@@ -47,7 +47,7 @@ namespace MidiController{
     }
 
     void PressKey(Shortcut& shortcut, int amount) {
-        float repeats = amount + amount * 0.5f;
+        float repeats = amount == 1 ? 1 : (amount + amount * 0.5f);
 
         for (int i = 0; i < repeats; i++) {
             Keyboard::Key(shortcut);
